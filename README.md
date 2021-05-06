@@ -1,12 +1,4 @@
----
-title: "APPleTree"
-author: "Markus Raitzsch"
-output: html_document
-
-<img style="float: right;" src="www/akazie_light-green.png">
----
-
-<hr>
+# APPleTree
 
 ## Allgemeine Informationen
 *APPleTree* ist eine R Shiny-Applikation, mit der du die Daten von **TreesCount! 2015**, einer Art Volkszählung von Straßenbäumen in New York City, herunterladen und in einer Tabelle ansehen kannst. Weiterhin gibt es verschiedene Möglichkeiten die Daten zu filtern, sowohl in der Sidebar mit Mehrfachauswahl als auch mit Einfach-Filtern direkt in der Tabelle. Um dir einen Überblick über die Daten zu verschaffen, kannst du eine Variable und eine Klasseneinteilung auswählen und dir als interaktives Balken- bzw. Violindiagramm anzeigen lassen. Die gefilterten und klassifizierten Daten werden ebenso in einer interaktiven Karte angezeigt. Falls dir mal eine Baumart nichts sagt, kannst du sie dir in der Baumfibel anschauen. Hier greift das Programm auf eine externe MySQL-Datenbank zu; so bleibt die App schön schlank und benötigt lediglich 180 kB Speicherplatz.
