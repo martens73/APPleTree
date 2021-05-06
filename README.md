@@ -52,7 +52,7 @@ R -e "shiny::runApp('~/app.R')"
 In beiden Fällen muss '~/app.R' noch mit dem Pfad zum Arbeitsverzeichnis ergänzt werden, z. B. 'home/user/work/R-scripts/APPleTree/app.R'.
 
 ## Laden des Datensatzes
-Nachdem die App im Browser erscheint, klicke einfach links oben unter dem Baum-Logo auf `Hole Datensatz vom Server`. Der Datensatz ist ca. 250 MB groß und kann daher etwas Zeit zum Laden in Anspruch nehmen. Einfach ~1 Minute warten, bis sich die Tabelle, Karte und Diagramm aufgebaut haben. Danach sollte alles flüssig gehen. Die Datei kannst du auch lokal auf dem Rechner als CSV speichern... aber ACHTUNG, wenn Filter aktiv sind, wird auch nur der gefilterte Datensatz gespeichert.
+Nachdem die App im Browser erscheint, klicke einfach links oben unter dem Baum-Logo auf `Hole Datensatz vom Server`. Der Datensatz ist ca. 250 MB groß und kann daher etwas Zeit zum Laden in Anspruch nehmen. Einfach ~1 Minute warten, bis sich die Tabelle, Karte und Diagramm aufgebaut haben. Danach sollte alles flüssig gehen. Die Datei kannst du auch lokal auf deinem Rechner als CSV speichern... aber ACHTUNG, wenn Filter aktiv sind, wird auch nur der gefilterte Datensatz gespeichert.
 <br>
 <br>
 Viel Spaß beim Ausprobieren!
