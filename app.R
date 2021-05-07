@@ -25,7 +25,7 @@ onStop(function() {
     dbDisconnect(conn=con)
 })
 
-# Hole registrierte Baumarten als Listeezige
+# Hole registrierte Baumarten als Liste
 load("www/treechoices.txt")
 
 # UI Layout
@@ -217,7 +217,6 @@ server <- function(input, output, session) {
     trees <- eventReactive(input$getdata,{
         material_spinner_show(session, "data")
         trees <- read_csv('https://data.cityofnewyork.us/api/views/uvpi-gqnh/rows.csv?accessType=DOWNLOAD', na = c("", NA)) %>%
-        # trees <- read_csv('~/Dokumente/Arbeit/Rscripts/Sci-it/2015_Street_Tree_Census_-_Tree_Data.csv') %>% # nur für lokales Laden auf Markus' Rechner
             mutate(stump_diam = na_if(stump_diam, "0")) %>%
             mutate(spc_common = replace(spc_common, which(spc_common == "'Schubert' chokecherry"), "Schubert chokecherry"))
         material_spinner_hide(session, "data")
@@ -229,7 +228,6 @@ server <- function(input, output, session) {
         trees() %>%
             dplyr::filter(is.na(borough) | borough %in% input$boroughselect) %>%
             dplyr::filter(is.na(health) | health %in% input$healthselect)
-            # dplyr::filter(is.na(spc_common) | spc_common %in% input$treeselect)
     })
     
     # Rendere die (gefilterten) Daten
